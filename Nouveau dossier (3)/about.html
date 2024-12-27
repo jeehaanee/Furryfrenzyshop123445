@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Frenzy</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="About.css">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <span class="store-name">Furry Frenzy</span>
+        </div>
+        <div class="nav-right">
+            <button id="search-icon" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="search" name="search" id="search" placeholder="Search for products...">
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Furry Frenzy Shop! We are passionate about providing the best pets and products for your furry, feathered, and scaly friends. Our goal is to offer a wide variety of pets and pet care essentials, so your pets can live happy and healthy lives.</p>
+        <p>At Furry Frenzy, we believe that pets are family, and we treat every pet with the love and care they deserve. Whether you're looking to adopt a pet or find supplies, we are here to help you along every step of the way.</p>
+
+        <div class="team">
+            <div class="team-member">
+                <img src="jan1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="jan2.webp" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Pet Care Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="jan3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </section>
+
+
+ 
+<div class="footer">
+    <div class="contact">
+        <Center> <b>furry frenzy shop</b></Center>
+        <p>Nous contacter</p>
+        <p>Tél/WhatsApp: <a href="tel:0702070067">0634547888</a></p>
+    </div>
+    <div class="links">
+        <a href="#terms">Conditions générales</a>
+        <a href="#privacy">Politique de confidentialité</a>
+        <a href="#shipping">Expédition/Livraison</a>
+        <a href="#refund">Remboursements et retours</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</div>
+
+
+
+    <script>
+        function toggleSearch() {
+            const searchInput = document.getElementById("search");
+            searchInput.style.display = searchInput.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

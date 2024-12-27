@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Frenzy</title>
+  <link rel="stylesheet" href="PRJjihane.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <span class="store-name">Furry Frenzy</span>
+        </div>
+        <div class="nav-right">
+            <button id="search-icon" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="search" name="search" id="search" placeholder="search..." style="display: none;">
+
+            <div class="dropdown">
+                <button id="account-icon" onclick="toggleDropdown()">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div id="account-menu" class="dropdown-menu" style="display: none;"></div>
+                    <a href="login.html">Login</a>
+                </div>
+                
+            </div>
+
+            <a href="cart.html" class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center w-100">
+                <img src="cat_dog-removebg-preview.png" alt="Pets" width="80PX">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-pets">Our pets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="photo"> 
+        <img src="cats dogs 1.jpg" class="slides active" alt="Photo 1">
+        <img src="cats dogs 2.webp" class="slides" alt="Photo 2">
+        <img src="cats dogs 3.jpg" class="slides" alt="Photo 3">
+        <div class="text-overlay">
+            <h3>Your pet is also a part of your family!</h3> 
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    </div>
+
+
+    <br> <br> <br>
+<h1 style="text-align: center; text-decoration: underline;" id="our-pets">Pets Section</h1>
+
+    <h2>Cats:</h2>
+    
+       <div class="team">
+        <div class="team-member">
+            <img src="cat8.webp" alt="Luna the cat">
+            <h4>LUNA</h4>
+            <p>Affectionate, vocal, playful, curious, social..</p>
+            <p><b>$1,200</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    
+        <div class="team-member">
+            <img src="cat2.jpeg" alt="Luna the cat">
+            <h4>max</h4>
+            <p>Friendly, playful, intelligent, large, sociable..</p>
+            <p><b>$1,000</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    
+        <div class="team-member">
+            <img src="cat3.jpeg">
+            <h4>pikoo</h4>
+            <p>Charming, calm, plush, independent, affectionate..</p>
+            <p><b>$900</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    </div>
+    
+ 
+    <div class="team">
+        <div class="team-member">
+            <img src="cat4.jpeg" alt="Luna the dog">
+            <h4>diva</h4>
+            <p>Luxurious, calm, affectionate, fluffy, gentle..</p>
+            <p><b>$4,200</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    
+        <div class="team-member">
+            <img src="cat6.jpeg" alt="Luna the dog">
+            <h4>felix</h4>
+            <p>Active, playful, curious, sleek, affectionate..</p>
+            <p><b>$600</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    
+        <div class="team-member">
+            <img src="CAT10.webp" alt="Luna the dog">
+            <h4>Rosie</h4>
+            <p>Affectionate, vocal, playful, curious, social..</p>
+            <p><b>$1,200</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    </div>
+ <h2>Dogs:</h2>
+    
+    <div class="team">
+        <div class="team-member">
+            <img src="dog1.jpeg" alt="Luna the cat">
+            <h4>Zeus</h4>
+            <p>Intelligent, loyal, protective, energetic, confident..</p>
+            <p><b>$920</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    
+        <div class="team-member">
+            <img src="dog2.jpg" alt="Luna the cat">
+            <h4>bella</h4>
+            <p>Calm, courageous, affectionate, gentle, loyal
+
+                ..</p>
+            <p><b>$2,100</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    
+        <div class="team-member">
+            <img src="dog5.jpg">
+            <h4>teddy</h4>
+            <p>Friendly, loyal, intelligent, active, loving..</p>
+            <p><b>$900</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+
+        </div>
+    </div>
+    
+ 
+    <div class="team">
+        <div class="team-member">
+            <img src="dog6.webp">
+            <h4>charlie</h4>
+            <p>Affectionate, playful, loyal, brave, curious..</p>
+            <p><b>$6,200</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    
+        <div class="team-member">
+            <img src="Dog7.avif" alt="Luna the dog">
+            <h4>doris</h4>
+            <p>Friendly, loyal, intelligent, playful, obedient..</p>
+            <p><b>$1,600</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    
+        <div class="team-member">
+            <img src="DOG15.jpeg" alt="Luna the dog">
+            <h4>luli</h4>
+            <p>Loyal, energetic, independent, playful, strong..</p>
+            <p><b>$2000</b></p>
+            <a href="cart.html"><button class="shop-now-button">Shop Now</button></a>
+        </div>
+    </div>
+
+
+    <Center>
+        <img src="ROYAL1.avif" alt=""
+        width="500PX">
+        <img src="ROYAL2.avif" alt="" width="500PX">
+        </Center>
+
+<section class="shop" id="shop">
+    <div class="title">
+        <h2 class="titetext" id="food">NEW PRODUCTS <br> <br> <br> <center>Dogs food</center></h2>
+    
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD1.webp" alt="">
+            </div>
+            <div class="text">
+                Fish Delights - Wild Salmon
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD2.webp" alt="">
+            </div>
+            <div class="text">
+                Fish Delights - Lamb
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD3.webp" alt="">
+            </div>
+            <div class="text">
+                Fish Delights - Chicken & Beef
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD4.webp" alt="">
+            </div>
+            <div class="text">
+                Fish Delights - Potato & Spinach
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <a href="cart.html" class="sall">SHOP ALL</a>
+</section>
+<section class="shop" id="shop">
+    <div class="title">
+        <h2 class="titetext">cats Food</h2>
+    
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD5.png" alt="" width="210PX">
+            </div>
+            <div class="text">
+               Lotus Just Juicy pork stew for cats
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD6.png" alt=""
+                width="200PX">
+            </div>
+            <div class="text">
+              Freedom adult cats food fish and chicken 1.2kg
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD7.png" alt=""
+                width="200PX">
+            </div>
+            <div class="text">
+               Animls like us
+            </div>
+            <div class="price">
+                <b>$25.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="FOOD8.png" alt=""
+                width="200PX">
+            </div>
+            <div class="text">
+                nstinct original grain free pate / Real Rabbit Recipe 
+            </div>
+            <div class="price">
+                <b>$250.00</b>
+            </div>
+            <div class="imgbtn">
+                <a href="cart.html" class="btn1">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <a href="cart.html" class="sall">SHOP ALL</a>
+</section>
+
+<br> <br> <br> <br> <br> <br> <br>
+<nav class="jojo">
+    <div class="brands">
+        <img src= "BRAND2.jpg" alt="Brand 1">
+        
+    </div>
+</nav>
+
+<br> <br> <br> <br> <br> <br> <br>
+ 
+<div class="footer">
+    <div class="contact">
+      
+        <Center> <b>furry frenzy shop</b></Center>
+        <p>Nous contacter</p>
+        <p>Tél/WhatsApp: <a href="tel:0702070067">0634547888</a></p>
+    </div>
+    <div class="links">
+        <a href="#terms">Conditions générales</a>
+        <a href="#privacy">Politique de confidentialité</a>
+        <a href="#shipping">Expédition/Livraison</a>
+        <a href="#refund">Remboursements et retours</a>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides');
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(showNextSlide, 3000); // Change image every 3 seconds
+    </script>
+
+</body>
+</html>
